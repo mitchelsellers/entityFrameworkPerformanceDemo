@@ -9,7 +9,6 @@ namespace PerformanceDemo.Data.Models
         public int SchoolTypeId { get; set; }
 
         [Required]
-        [Index(IsUnique = true)]
         public string SchoolTypeName { get; set; }
 
         public virtual ICollection<School> Schools { get; set; }

@@ -49,12 +49,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BadDataService.cs" />
+    <Compile Include="GoodDataServices.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Projection\SchoolListModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PerformanceDemo.Data\PerformanceDemo.Data.csproj">
+      <Project>{C8A7CBA0-F9F6-45ED-BD09-B649255C99DA}</Project>
+      <Name>PerformanceDemo.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

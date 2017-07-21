@@ -47,6 +47,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201707191441389_Initial.cs" />
+    <Compile Include="Migrations\201707191441389_Initial.Designer.cs">
+      <DependentUpon>201707191441389_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707191541584_ActiveFlag.cs" />
+    <Compile Include="Migrations\201707191541584_ActiveFlag.Designer.cs">
+      <DependentUpon>201707191541584_ActiveFlag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AddressState.cs" />
     <Compile Include="Models\Classroom.cs" />
     <Compile Include="Models\Course.cs" />
@@ -61,6 +70,14 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201707191441389_Initial.resx">
+      <DependentUpon>201707191441389_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707191541584_ActiveFlag.resx">
+      <DependentUpon>201707191541584_ActiveFlag.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

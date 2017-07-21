@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PerformanceDemo.Data.Models
 {
@@ -12,7 +13,7 @@ namespace PerformanceDemo.Data.Models
 
         [Required]
         [StringLength(500)]
-        public int SchoolName { get; set; }
+        public string SchoolName { get; set; }
 
         [Required]
         [StringLength(200)]
@@ -30,6 +31,7 @@ namespace PerformanceDemo.Data.Models
         [Required]
         [StringLength(10)]
         public string PostalCode { get; set; }
+        public bool IsActive { get; set; }
 
 
         public virtual SchoolType SchoolType { get; set; }
