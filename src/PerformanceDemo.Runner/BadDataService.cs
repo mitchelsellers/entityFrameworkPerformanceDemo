@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,7 +37,7 @@ namespace PerformanceDemo.Runner
             using (var ctx = new SampleDbContext())
             {
                 //Get entire schools table here
-                var query = ctx.Schools.ToList(); //Grabs the entire schools table
+                var query = ctx.Schools.AsNoTracking().Include(s => s.State).ToList(); //Grabs the entire schools table
 
                 //Filtering - ALL in Memory
                 if (!string.IsNullOrEmpty(schoolName))
