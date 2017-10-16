@@ -19,7 +19,7 @@ namespace PerformanceDemo.Runner
             var timer = new Stopwatch();
             timer.Start();
             //var schools = test.SearchSchools(null, null, 0, 25);
-            badTest.SearchSchoolsReallyBad(null, "IA", 0, 25);
+            //badTest.SearchSchoolsReallyBad(null, "IA", 0, 25);
             //var limited = test.SearchSchools("Testing", "IA", 0, 25);
             //var withProject = test.SearchWithProjection("Testing", "IA", 0, 25);
             //PerfTestGood();
