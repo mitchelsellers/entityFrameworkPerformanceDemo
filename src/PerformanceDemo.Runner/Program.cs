@@ -14,13 +14,16 @@ namespace PerformanceDemo.Runner
             var test =  new GoodDataServices();
             var badTest = new BadDataService();
             
-            var result = test.CountOfCourseSessionsByDepartment("Marketing");
+            //You can comment, or uncomment various items below to see the impacts of each query
+
+            //Complex query example
+            //var result = test.CountOfCourseSessionsByDepartment("Marketing");
 
             var timer = new Stopwatch();
             timer.Start();
             //var schools = test.SearchSchools(null, null, 0, 25);
             //badTest.SearchSchoolsReallyBad(null, "IA", 0, 25);
-            //var limited = test.SearchSchools("Testing", "IA", 0, 25);
+            var limited = test.SearchSchools("Testing", "IA", 0, 25);
             //var withProject = test.SearchWithProjection("Testing", "IA", 0, 25);
             //PerfTestGood();
             //PerfTestBad();

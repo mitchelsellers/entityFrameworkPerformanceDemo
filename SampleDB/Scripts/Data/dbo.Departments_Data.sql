@@ -1,0 +1,18 @@
+SET IDENTITY_INSERT [dbo].[Departments] ON
+INSERT INTO [dbo].[Departments] ([DepartmentId], [DepartmentName]) VALUES (1, N'BusinessSales')
+INSERT INTO [dbo].[Departments] ([DepartmentId], [DepartmentName]) VALUES (2, N'Sales')
+INSERT INTO [dbo].[Departments] ([DepartmentId], [DepartmentName]) VALUES (3, N'InternationalSales')
+INSERT INTO [dbo].[Departments] ([DepartmentId], [DepartmentName]) VALUES (4, N'Marketing')
+INSERT INTO [dbo].[Departments] ([DepartmentId], [DepartmentName]) VALUES (5, N'Cutomer')
+INSERT INTO [dbo].[Departments] ([DepartmentId], [DepartmentName]) VALUES (6, N'Technical')
+INSERT INTO [dbo].[Departments] ([DepartmentId], [DepartmentName]) VALUES (7, N'Service')
+INSERT INTO [dbo].[Departments] ([DepartmentId], [DepartmentName]) VALUES (8, N'Prepaid Customer')
+INSERT INTO [dbo].[Departments] ([DepartmentId], [DepartmentName]) VALUES (9, N'Web')
+INSERT INTO [dbo].[Departments] ([DepartmentId], [DepartmentName]) VALUES (10, N'AccessorySales')
+INSERT INTO [dbo].[Departments] ([DepartmentId], [DepartmentName]) VALUES (11, N'NationalSales')
+INSERT INTO [dbo].[Departments] ([DepartmentId], [DepartmentName]) VALUES (12, N'CorporateSales')
+INSERT INTO [dbo].[Departments] ([DepartmentId], [DepartmentName]) VALUES (13, N'Corporate Care')
+INSERT INTO [dbo].[Departments] ([DepartmentId], [DepartmentName]) VALUES (14, N'TechnicalSales')
+INSERT INTO [dbo].[Departments] ([DepartmentId], [DepartmentName]) VALUES (15, N'Accounting')
+INSERT INTO [dbo].[Departments] ([DepartmentId], [DepartmentName]) VALUES (16, N'ConsumerSales')
+SET IDENTITY_INSERT [dbo].[Departments] OFF
